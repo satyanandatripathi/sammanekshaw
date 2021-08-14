@@ -9,4 +9,6 @@ async def fetch(url):
                 data = await resp.json()
             except Exception:
                 data = await resp.text()
+
     return data
+    await session.close()
