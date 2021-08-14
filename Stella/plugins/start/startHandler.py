@@ -41,7 +41,7 @@ async def start(client, message):
         len(message.command) == 1
     ):
         if message.chat.type == 'private':
-            buttons = [[
+            buttons = [
                 InlineKeyboardButton('Help', callback_data='help_back'),
                 ],
                 [
