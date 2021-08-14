@@ -18,3 +18,5 @@ captcha
 apscheduler
 ffmpeg
 python-dotenv
+aiofiles
+pykeyboard
