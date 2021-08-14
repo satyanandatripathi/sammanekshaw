@@ -28,7 +28,7 @@ from Stella.plugins.rules.rules import rulesRedirect
 
 START_TEXT = (
     "Hi there {mention}! I am Telegram bot based on theme of Sam Manekshaw ,first Field Marshal of Indian Army  \n\n"
-    "`"Bhartiya thal Sena , sarvatra shaktishali"` \n\n"
+    "`Bhartiya thal Sena , sarvatra shaktishali` \n\n"
     "**Do** /help **to get more information on how to use me or click the \"Help\" button below.**\n\n"
     "> Join our updates channel to stay updated about latest changes made to me and my support chat if you need any further help or wish to report an issue.\n\n"
     "![OT] group: **@dotenv**\n"
