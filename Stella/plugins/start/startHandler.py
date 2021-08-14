@@ -27,12 +27,12 @@ from Stella.plugins.rules.rules import rulesRedirect
 # from Stella.plugins.help.help import redirectHelp
 
 START_TEXT = (
-    "Konnichiwa {mention}! I am Stella - the first telegram group management bot to be built in `Pyrogram` with the support of `MongoDB`, this also means I am faster than others in terms of processing and giving outputs. I have a large set of modular features to offer that'll help you manage your chats in an efficient way. \n\n"
-    "— Add me to your group to get a taste of that lightning fast speed ⚡️\n\n"
+    "Hi there {mention}! I am Telegram bot based on theme of Sam Manekshaw ,first Field Marshal of Indian Army  \n\n"
+    "`"Bhartiya thal Sena , sarvatra shaktishali"` \n\n"
     "**Do** /help **to get more information on how to use me or click the \"Help\" button below.**\n\n"
     "> Join our updates channel to stay updated about latest changes made to me and my support chat if you need any further help or wish to report an issue.\n\n"
-    "Updates Channel: **@StellaUpdates**\n"
-    "Support Chat: **@StellaSupportChat**"
+    "![OT] group: **@dotenv**\n"
+    "Support Chat: **@menotdeveloper**"
 )
 
 @StellaCli.on_message(custom_filter.command(commands=('start')))
@@ -43,8 +43,11 @@ async def start(client, message):
         if message.chat.type == 'private':
             buttons = [[
                 InlineKeyboardButton('Help', callback_data='help_back')
+                ],
+                [
+                InlineKeyboardButton('Owner🦚', url="http://t.me/mrstrange_genuine")
+                InlineKeyboardButton('Donate', url="https://www.bharatkeveer.gov.in")
                 ]]
-                    
             await message.reply_text(
                 START_TEXT.format(mention=message.from_user.mention),
                 reply_markup=InlineKeyboardMarkup(buttons),
