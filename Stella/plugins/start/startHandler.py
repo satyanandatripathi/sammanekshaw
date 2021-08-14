@@ -41,13 +41,11 @@ async def start(client, message):
         len(message.command) == 1
     ):
         if message.chat.type == 'private':
-            buttons = [
+            buttons = [[
                 InlineKeyboardButton('Help', callback_data='help_back'),
-                ],
-                [
                 InlineKeyboardButton('Owner🦚', url="http://t.me/mrstrange_genuine"),
                 InlineKeyboardButton('Donate', url="https://www.bharatkeveer.gov.in"),
-                ]
+                ]]
             await message.reply_text(
                 START_TEXT.format(mention=message.from_user.mention),
                 reply_markup=InlineKeyboardMarkup(buttons),
