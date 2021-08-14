@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton
 from Stella import aiohttpsession as session
 from Stella import app
 from Stella.pyrogramee.errors import capture_err
-from Stella.helpers.pastebin import paste
+from Stella.helper.pastebin import paste
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
