@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
 from Stella import aiohttpsession as session
-from Stella import app
+from Stella import StellaCli
 from Stella.pyrogramee.errors import capture_err
 from Stella.helper.pastebin import paste
 
@@ -32,7 +32,7 @@ async def isPreviewUp(preview: str) -> bool:
     return False
 
 
-@app.on_message(filters.command("paste") & ~filters.edited)
+@StellaCli.on_message(filters.command("paste") & ~filters.edited)
 @capture_err
 async def paste_func(_, message):
     if not message.reply_to_message:
