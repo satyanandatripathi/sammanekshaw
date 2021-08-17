@@ -22,7 +22,7 @@ import requests
 
 class StellaClient:
 
-    def __init__(self, api_key: str, host: str = 'http://127.0.0.1:5000/api/v1') -> None:
+    def __init__(self, api_key: str, host: str = 'https://stellagban.meanii.codes/') -> None:
         self.host = host
         self.session = requests.Session()
         self.session.headers.update({'API-KEY': api_key})
