@@ -2,7 +2,7 @@ import os
 import requests
 import aiohttp
 import youtube_dl
-
+import asyncio
 from pyrogram import filters
 from Stella import pbot
 from youtube_search import YoutubeSearch
