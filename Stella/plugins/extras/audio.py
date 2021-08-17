@@ -15,7 +15,7 @@ def time_to_seconds(time):
 
 
 @pbot.on_message(filters.command(['audio']))
-def song(client, message):
+async def song(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
