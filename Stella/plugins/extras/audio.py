@@ -43,12 +43,12 @@ def song(client, message):
         views = results[0]["views"]
 
     except Exception as e:
-        m.edit(
+        await m.edit(
             "✖️ 𝐹𝑜𝓊𝓃𝒹 𝒩𝑜𝓉𝒽𝒾𝓃𝑔. 𝒮𝑜𝓇𝓇𝓎.\n\n𝒯𝓇𝓎 𝒶𝓃𝑜𝓉𝒽𝑒𝓇 𝓀𝑒𝓎𝓌𝑜𝓇𝓀 𝑜𝓇 𝓂𝒶𝓎𝒷𝑒 𝓈𝓅𝑒𝓁𝓁 𝒾𝓉 𝓅𝓇𝑜𝓅𝑒𝓇𝓁𝓎."
         )
         print(str(e))
         return
-    m.edit("𝑀𝑒 𝒯𝒽𝑒 'SHFJ Manekshaw' 𝒾𝓈 𝒹𝑜𝓌𝓃𝓁𝑜𝒶𝒹𝒾𝓃𝑔 𝓉𝒽𝑒 𝒶𝓊𝒹𝒾𝑜 𝒻𝑜𝓇 𝓎𝑜𝓊")
+    await m.edit("𝑀𝑒 𝒯𝒽𝑒 'SHFJ Manekshaw' 𝒾𝓈 𝒹𝑜𝓌𝓃𝓁𝑜𝒶𝒹𝒾𝓃𝑔 𝓉𝒽𝑒 𝒶𝓊𝒹𝒾𝑜 𝒻𝑜𝓇 𝓎𝑜𝓊")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -59,8 +59,8 @@ def song(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
-        m.delete()
+        await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
+        await m.delete()
     except Exception as e:
         m.edit('❌ Error')
         print(e)
