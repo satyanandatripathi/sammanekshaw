@@ -20,6 +20,3 @@ ffmpeg
 python-dotenv
 aiofiles
 pykeyboard
-youtube_dl
-youtube_search
-requests
