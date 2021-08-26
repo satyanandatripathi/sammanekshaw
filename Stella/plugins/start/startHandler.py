@@ -27,12 +27,8 @@ from Stella.plugins.rules.rules import rulesRedirect
 # from Stella.plugins.help.help import redirectHelp
 
 START_TEXT = (
-    "Hi there {mention}! I am Telegram bot based on theme of [Sam Manekshaw](https://telegra.ph/file/8a08267e1c853d9e79997.jpg) ,first Field Marshal of Indian Army  \n\n"
-    "`Bhartiya thal Sena , sarvatra shaktishali` \n\n"
-    "**Do** /help **to get more information on how to use me or click the \"Help\" button below.**\n\n"
-    "> Join our updates channel to stay updated about latest changes made to me and my support chat if you need any further help or wish to report an issue.\n\n"
-    "![OT] group: **@dotenv**\n"
-    "Support Chat: **@menotdeveloper**"
+    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential."\n\n
+"Join my [News Channel](TheXBots) to get information on all the latest updates."
 )
 
 @StellaCli.on_message(custom_filter.command(commands=('start')))
@@ -42,9 +38,9 @@ async def start(client, message):
     ):
         if message.chat.type == 'private':
             buttons = [[
-                InlineKeyboardButton('Help', callback_data='help_back'),
-                InlineKeyboardButton('Owner🦚', url="http://t.me/mrstrange_genuine"),
-                InlineKeyboardButton('Donate', url="https://www.bharatkeveer.gov.in"),
+                InlineKeyboardButton(
+            text="Add Me To Your Chat", url="t.me/SamManekshawBot?startgroup=true"), 
+
                 ]]
             await message.reply_text(
                 START_TEXT.format(mention=message.from_user.mention),
@@ -55,7 +51,7 @@ async def start(client, message):
 
         elif message.chat.type == 'supergroup':
             await message.reply(
-                "hey there, ping me in my PM to get help!"
+                "Heya :) PM me if you have any questions on how to use me!"
             )
     
     if (
