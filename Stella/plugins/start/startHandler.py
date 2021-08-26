@@ -27,8 +27,7 @@ from Stella.plugins.rules.rules import rulesRedirect
 # from Stella.plugins.help.help import redirectHelp
 
 START_TEXT = (
-    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential."\n\n
-"Join my [News Channel](TheXBots) to get information on all the latest updates."
+    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](TheXBots) to get information on all the latest updates."
 )
 
 @StellaCli.on_message(custom_filter.command(commands=('start')))
