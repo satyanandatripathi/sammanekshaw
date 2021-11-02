@@ -10,7 +10,7 @@ import os
 
 from pyrogram import filters
 from time import time
-from nksama import bot
+from Stella import StellaCli as bot
 
 MONGO_URL = os.environ.get('DATABASE_URI')
 
