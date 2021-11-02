@@ -12,7 +12,7 @@ from pyrogram import filters
 from time import time
 from nksama import bot
 
-MONGO_URL = os.environ.get('MONGO_URL')
+MONGO_URL = os.environ.get('DATABASE_URI')
 
 MONGO_DB =  'CHATBOT'
 mongodb = MongoClient(MONGO_URL)["CHATBOT"]
