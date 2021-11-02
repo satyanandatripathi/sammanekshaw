@@ -13,10 +13,9 @@ from time import time
 from Stella import StellaCli as bot
 from Stella import DATABASE_URI
 
-MONGO_URL = "mongodb+srv://galactus:robot@cluster0.lb3lk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 MONGO_DB =  'CHATBOT'
-mongodb = MongoClient(MONGO_URL)["CHATBOT"]
+mongodb = MongoClient(DATABASE_URI)["CHATBOT"]
 
 
 
