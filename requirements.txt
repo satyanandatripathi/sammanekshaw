@@ -20,3 +20,7 @@ ffmpeg
 python-dotenv
 aiofiles
 pykeyboard
+odmantic
+motor<2.4.0,>=2.1.0
+bs4
+requests
