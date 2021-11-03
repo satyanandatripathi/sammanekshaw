@@ -11,11 +11,12 @@ import os
 from pyrogram import filters
 from time import time
 from Stella import StellaCli as bot
-from Stella import DATABASE_URI
 
+
+MONGO_URL = os.environ.get('MONGO_URL')
 
 MONGO_DB =  'CHATBOT'
-mongodb = MongoClient(DATABASE_URI)["CHATBOT"]
+mongodb = MongoClient(MONGO_URL)["CHATBOT"]
 
 
 
