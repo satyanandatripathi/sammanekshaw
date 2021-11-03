@@ -36,7 +36,7 @@ class Config:
     BOT_USERNAME= getenv("BOT_USERNAME")
     BOT_ID = getenv("BOT_ID")
     PREFIX = getenv("PRRFIX")
-
+    MONGO_URL = getenv("MONGO_URL")
     DATABASE_URI = getenv("DATABASE_URI")
     BACKUP_CHAT = getenv("BACKUP_CHAT")
 
