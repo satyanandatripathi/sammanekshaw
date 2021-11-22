@@ -9,7 +9,7 @@ from Stella
 from Stella.pyrogramee.perm import adminsOnly
 
 
-@app.on_message(filters.command("set_chat_title") & ~filters.private)
+@app.on_message(filters.command("setchattitle") & ~filters.private)
 @adminsOnly("can_change_info")
 async def set_chat_title(_, message):
     if len(message.command) < 2:
@@ -22,7 +22,7 @@ async def set_chat_title(_, message):
     )
 
 
-@app.on_message(filters.command("set_user_title") & ~filters.private)
+@app.on_message(filters.command("setusertitle") & ~filters.private)
 @adminsOnly("can_change_info")
 async def set_user_title(_, message):
     if not message.reply_to_message:
@@ -46,7 +46,7 @@ async def set_user_title(_, message):
     )
 
 
-@app.on_message(filters.command("set_chat_photo") & ~filters.private)
+@app.on_message(filters.command("setchatphoto") & ~filters.private)
 @adminsOnly("can_change_info")
 async def set_chat_photo(_, message):
     reply = message.reply_to_message
