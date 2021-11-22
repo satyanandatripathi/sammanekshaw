@@ -6,7 +6,7 @@ from pyrogram import filters
 
 from Stella import app
 from Stella
-
+from Stella.pyrogramee.perm import adminsOnly
 
 
 @app.on_message(filters.command("set_chat_title") & ~filters.private)
