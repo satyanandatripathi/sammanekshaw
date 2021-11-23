@@ -52,7 +52,7 @@ StellaCli = Client(
 )
 
 pbot = StellaCli
-app = pbot
+app = StellaCli
 
 aiohttpsession = ClientSession()
 
