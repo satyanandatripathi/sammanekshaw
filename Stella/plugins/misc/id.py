@@ -1,5 +1,8 @@
-import pyrogram
-import asyncio
+from asyncio import Lock
+
+from pyrogram import filters
+from Stella import app
+
 
 @app.on_message(filters.command("id"))
 async def getid(client, message):
