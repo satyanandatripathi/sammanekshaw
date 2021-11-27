@@ -1,7 +1,6 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from utils import extract_user, get_file_id, get_poster, last_online
+from Stella.helper.orgasm import extract_user, last_online
 import time
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -11,7 +10,9 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 
 @Client.on_message(filters.command(["info"]))
 async def who_is(client, message):
+
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
+
     status_message = await message.reply_text(
         "`Fetching user info...`"
     )
