@@ -1,5 +1,6 @@
 import os
-from pyrogram import Client, filters
+from pyrogram import filters
+from Stella import app
 from Stella.helper.orgasm import extract_user, last_online
 import time
 from datetime import datetime
@@ -8,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 
 
 
-@Client.on_message(filters.command(["info"]))
+@app.on_message(filters.command(["info"]))
 async def who_is(client, message):
 
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
@@ -22,7 +23,7 @@ async def who_is(client, message):
     from_user = None
     from_user_id, _ = extract_user(message)
     try:
-        from_user = await client.get_users(from_user_id)
+        from_user = await app.get_users(from_user_id)
     except Exception as error:
         await status_message.edit(str(error))
         return
@@ -53,7 +54,7 @@ async def who_is(client, message):
             pass
     chat_photo = from_user.photo
     if chat_photo:
-        local_user_photo = await client.download_media(
+        local_user_photo = await app.download_media(
             message=chat_photo.big_file_id
         )
         buttons = [[
