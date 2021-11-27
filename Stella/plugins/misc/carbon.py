@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 from Stella import app
-from Stella.pyrogramee.erros import capture_err
+from Stella.pyrogramee.errors import capture_err
 from Stella.helper import make_carbon
 
 
