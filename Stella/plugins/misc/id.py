@@ -1,7 +1,7 @@
 from asyncio import Lock
 
 from pyrogram import filters
-from Stella import app
+from Stella import app, eor
 
 
 @app.on_message(filters.command("id"))
