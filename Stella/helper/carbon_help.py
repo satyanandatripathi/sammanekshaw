@@ -1,4 +1,5 @@
 import asyncio
+import aiohttp
 
 async def make_carbon(code):
     url = "https://carbonara.vercel.app/api/cook"
