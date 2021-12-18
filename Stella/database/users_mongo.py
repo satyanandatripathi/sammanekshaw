@@ -76,13 +76,13 @@ def add_user(user_id, username=None, chat_id=None, chat_title=None, Forwared=Fal
                     'user_id': user_id
                 },
                 {
-                '$push': {
-                    'chats': {
-                        '_id': ChatsIDs,
-                        'chat_id': chat_id,
-                        'chat_title': chat_title
-                            }
+                    '$push': {
+                        'chats': {
+                            '_id': ChatsIDs,
+                            'chat_id': chat_id,
+                            'chat_title': chat_title
                         }
+                    }
                 }
 
             )
