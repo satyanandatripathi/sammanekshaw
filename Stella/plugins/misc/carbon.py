@@ -2,7 +2,7 @@ from pyrogram import filters
 
 from Stella import app
 from Stella.pyrogramee.errors import capture_err
-from Stella.helper import make_carbon
+from Stella.helper.carbon_help import make_carbon
 
 
 @app.on_message(filters.command("carbon"))
