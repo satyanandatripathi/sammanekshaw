@@ -1,5 +1,7 @@
 import asyncio
-import aiohttp
+from aiohttp import ClientSession
+
+aiosession = ClientSession()
 
 async def make_carbon(code):
     url = "https://carbonara.vercel.app/api/cook"
