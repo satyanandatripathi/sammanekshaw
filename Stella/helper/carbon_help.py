@@ -1,4 +1,5 @@
 import asyncio
+from io import BytesIO
 from aiohttp import ClientSession
 
 aiosession = ClientSession()
