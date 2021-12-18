@@ -87,7 +87,7 @@ async def NewMemeber(client, message):
             return 
         
         # Stella's Special welcome for kami-samas!
-        if user_id in OWNER_ID:
+        if str(user_id) == str(OWNER_ID):
             await message.reply(
                 "Omfg, the old man's here. I'm scared! >.<"
             )
