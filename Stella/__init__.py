@@ -55,6 +55,7 @@ pbot = StellaCli
 app = StellaCli
 
 aiohttpsession = ClientSession()
+aiosession = ClientSession()
 
 StellaAPI = StellaClient(api_key=StellaGbanAPI)
 
