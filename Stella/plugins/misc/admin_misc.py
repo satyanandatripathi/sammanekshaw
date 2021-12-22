@@ -12,7 +12,7 @@ from Stella.pyrogramee.perm import adminsOnly
 @adminsOnly("can_change_info")
 async def set_chat_title(_, message):
     if len(message.command) < 2:
-        return await message.reply_text("**Usage:**\n/set_chat_title NEW NAME")
+        return await message.reply_text("**Usage:**\n/setchattitle NEW NAME")
     old_title = message.chat.title
     new_title = message.text.split(None, 1)[1]
     await message.chat.set_title(new_title)
@@ -36,7 +36,7 @@ async def set_user_title(_, message):
     from_user = message.reply_to_message.from_user
     if len(message.command) < 2:
         return await message.reply_text(
-            "**Usage:**\n/set_user_title NEW ADMINISTRATOR TITLE"
+            "**Usage:**\n/setusertitle NEW ADMINISTRATOR TITLE"
         )
     title = message.text.split(None, 1)[1]
     await app.set_administrator_title(chat_id, from_user.id, title)
