@@ -84,7 +84,6 @@ def add_user(user_id, username=None, chat_id=None, chat_title=None, Forwared=Fal
                         }
                     }
                 }
-
             )
     
 
