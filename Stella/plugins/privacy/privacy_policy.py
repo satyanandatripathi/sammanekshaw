@@ -62,3 +62,141 @@ Under the General Data Protection Regulation (GDPR), the lawful bases we rely on
     • We have a legitimate interest: The data collected and retained is essential to the functioning of the bot. Admins add this bot to protect their chats, and certain data is required to guarantee this.
 """
 
+main_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("What information we collect", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Why we collect it", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we do", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we DO NOT do", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Right to process", callback_data = "righttext_privacy")
+        ]
+    ]
+)
+
+collect_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("• What information we collect •", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Why we collect it", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we do", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we DO NOT do", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Right to process", callback_data = "righttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Back", callback_data = "back_privacy")
+        ]
+    ]
+)
+
+why_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("What information we collect", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("• Why we collect it •", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we do", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we DO NOT do", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Right to process", callback_data = "righttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Back", callback_data = "back_privacy")
+        ]
+    ]
+)
+
+wedo_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("What information we collect", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Why we collect it", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("• What we do •", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we DO NOT do", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Right to process", callback_data = "righttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Back", callback_data = "back_privacy")
+        ]
+    ]
+)
+
+wedonot_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("What information we collect", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Why we collect it", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we do", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("• What we DO NOT do •", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Right to process", callback_data = "righttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Back", callback_data = "back_privacy")
+        ]
+    ]
+)
+
+right_button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("What information we collect", callback_data = "collecttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Why we collect it", callback_data = "whytext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we do", callback_data = "wedotext_privacy")
+        ],
+        [
+            InlineKeyboardButton("What we DO NOT do", callback_data = "wedonottext_privacy")
+        ],
+        [
+            InlineKeyboardButton("• Right to process •", callback_data = "righttext_privacy")
+        ],
+        [
+            InlineKeyboardButton("Back", callback_data = "back_privacy")
+        ]
+    ]
+)
+
+
+
+
