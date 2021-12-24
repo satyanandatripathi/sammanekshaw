@@ -29,4 +29,5 @@ __help__ = (
     "**Admin Misc:**\n"
     "- /setchattitle `<new chat name>` : to set new chat name"
     "- /setchatphoto `<reply to photo>` : to set new profile picture of chat"
+    "- /setusertitle `<reply to admin> : to change admin tag of someone who was promoted by bot :)
 )   
