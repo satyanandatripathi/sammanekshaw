@@ -2,4 +2,63 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from Stella import StellaCli
 from Stella.helper import custom_filter
 
-## will work on this later 
+
+main_text = """
+**Our contact details**
+**Name:** MissRose bot
+**Telegram:** https://t.me/dotenv
+
+The bot has been made to **protect** and **preserve** privacy as best as possible.
+The proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
+
+Our privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on https://t.me/dotenv.
+"""
+
+collect_text = """
+**The type of personal information we collect**
+
+We currently collect and process the following information:
+    • Telegram UserID, firstname, lastname, username (Note: These are your public telegram details. We do not know your "real" details.)
+    • Chat memberships (The list of all chats you have been seen interacting in)
+    • Settings or configurations as set through any commands (For example, welcome settings, notes, filters, etc)
+"""
+
+why_text = """
+**How we get the personal information and why we have it**
+
+Most of the personal information we process is provided to us directly by you for one of the following reasons:
+    • You've messaged the bot directly. This can be to read the complete a CAPTCHA, read the documentation, etc.
+    • You've opted to save your messages through the bot.
+
+We also receive personal information indirectly, from the following sources in the following scenarios:
+    • You're part of a group, or channel, which uses this bot.
+"""
+
+wedo_text = """
+**What we do with the personal information**
+
+We use the information that you have given us in order to support various bot features. This can include:
+    • User ID/username pairing, which allows the bot to resolve usernames to valid user ids.
+    • Chat memberships, which allows for federations to know where to ban from, and determine which bans are of importance to you.
+    • Storing certain messages that have been explicitly saved. (eg through notes, filters, welcomes, etc)
+"""
+
+wedonot_text = """
+**What we DO NOT do with the personal information**
+
+We **DO NOT:**
+    • store any messages, unless explicitly saved (eg through notes, filters, welcomes etc).
+    • use technologies like beacons or unique device identifiers to identify you or your device.
+    • knowingly contact or collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us so we can promptly obtain parental consent or remove the information.
+    • share any sensitive information with any other organisations or individuals.
+"""
+
+right_text = """
+**Rights to process**
+
+Under the General Data Protection Regulation (GDPR), the lawful bases we rely on for processing this information are:
+    • Your consent. You are able to remove your consent at any time. You can do this by using the tools provided to delete your data, which will delete any data that isnt critical to bot functionality.
+    • We need it to perform a public task. Namely, allowing group or channel admins to protect their chats.
+    • We have a legitimate interest: The data collected and retained is essential to the functioning of the bot. Admins add this bot to protect their chats, and certain data is required to guarantee this.
+"""
+
