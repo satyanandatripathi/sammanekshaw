@@ -6,5 +6,5 @@ __help__ = (
     " - /ud `<word>` : to search given word in urban dictionary\n"
     " - /info `<reply to user | username | user id>` : to fetch information about given entity\n"
     " - /id `<reply to user | chat id>` : to fetch Telegram id of user / chat\n"
-    " - /carbon `<reply to message>` : carbonise the given text
+    " - /carbon `<reply to message>` : carbonise the given text"
 )   
