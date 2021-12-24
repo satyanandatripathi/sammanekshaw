@@ -25,4 +25,8 @@ __help__ = (
     "- /demote `<reply/username/mention/userid>`: Demote a user.\n"
     "- /adminlist: List the admins in the current chat\n"
     "- /anonadmin `<yes/no/on/off>`: Allow anonymous admins to use all commands without checking their permissions. Not recommended."
+     
+    "**Admin Misc:**\n"
+    "- /setchattitle `<new chat name>` : to set new chat name"
+    "- /setchatphoto `<reply to photo>` : to set new profile picture of chat"
 )   
