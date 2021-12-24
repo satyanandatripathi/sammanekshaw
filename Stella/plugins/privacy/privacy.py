@@ -1,7 +1,6 @@
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from Stella import StellaCli
 from Stella.helper import custom_filter
-from Stella.plugins.urban_dictionary.get_data import getData
 
 @StellaCli.on_message(custom_filter.command(commands=('privacy')))
 async def urbanDictionary(client, message):
