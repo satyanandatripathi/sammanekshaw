@@ -24,10 +24,10 @@ __help__ = (
     "- /promote `<reply/username/mention/userid>`: Promote a user.\n"
     "- /demote `<reply/username/mention/userid>`: Demote a user.\n"
     "- /adminlist: List the admins in the current chat\n"
-    "- /anonadmin `<yes/no/on/off>`: Allow anonymous admins to use all commands without checking their permissions. Not recommended."
+    "- /anonadmin `<yes/no/on/off>`: Allow anonymous admins to use all commands without checking their permissions. Not recommended.\n\n"
      
     "**Admin Misc:**\n"
-    "- /setchattitle `<new chat name>` : to set new chat name"
-    "- /setchatphoto `<reply to photo>` : to set new profile picture of chat"
+    "- /setchattitle `<new chat name>` : to set new chat name\n"
+    "- /setchatphoto `<reply to photo>` : to set new profile picture of chat\n"
     "- /setusertitle `<reply to admin> : to change admin tag of someone who was promoted by bot :)"
 )   
