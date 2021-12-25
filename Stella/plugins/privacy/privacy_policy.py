@@ -204,7 +204,7 @@ async def ud_callback(client: StellaCli, query: CallbackQuery):
     if data == "privacy#policy":
         await query.message.edit_text(
             text = main_text,
-            disable_web_page_preview = True
+            disable_web_page_preview = True,
             reply_markup = main_button
         )
     elif data == "collecttext_privacy":
