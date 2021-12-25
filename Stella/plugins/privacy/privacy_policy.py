@@ -1,6 +1,7 @@
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from Stella import StellaCli
+from Stella import StellaCli, client, app
 from Stella.helper import custom_filter
+from pyrogram import filters
 
 
 main_text = """
