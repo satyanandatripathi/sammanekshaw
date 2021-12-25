@@ -40,7 +40,12 @@ async def start(client, message):
                 InlineKeyboardButton(
             text="Add Me To Your Chat", url="t.me/SamManekshawBot?startgroup=true"), 
 
-                ]]
+                 ]
+                      [
+                InlineKeyboardButton(
+            text="Privacy Policy", callback_data = "privacy#policy"),
+                 ]]
+
             await message.reply_text(
                 START_TEXT.format(mention=message.from_user.mention),
                 reply_markup=InlineKeyboardMarkup(buttons),
