@@ -24,7 +24,7 @@ from Stella.plugins.greeting.captcha.button_captcha import \
 from Stella.plugins.greeting.captcha.text_captcha import textCaptchaRedirect
 from Stella.plugins.notes.private_notes import note_redirect
 from Stella.plugins.rules.rules import rulesRedirect
-from Stella.plugins.help.fhelp import redirectHelp
+from Stella.plugins.help import fhelp
 
 START_TEXT = (
     "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](https://telegram.me/RikudoBots) to get information on all the latest updates. \n\n type **/privacy** to know about our **privacy policy**"
