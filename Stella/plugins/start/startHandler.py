@@ -27,7 +27,7 @@ from Stella.plugins.rules.rules import rulesRedirect
 # from Stella.plugins.help.help import redirectHelp
 
 START_TEXT = (
-    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](TheXBots) to get information on all the latest updates."
+    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](https://telegram.me/RikudoBots) to get information on all the latest updates. \n\n type **/privacy** to know about our **privacy policy**"
 )
 
 @StellaCli.on_message(custom_filter.command(commands=('start')))
@@ -40,8 +40,6 @@ async def start(client, message):
                 InlineKeyboardButton(
             text="Add Me To Your Chat", url="t.me/SamManekshawBot?startgroup=true"), 
 
-                InlineKeyboardButton(
-            text="Privacy Policy", callback_data = "privacy#policy"),
                  ]]
 
             await message.reply_text(
@@ -59,12 +57,12 @@ async def start(client, message):
     if (
         len(message.command) > 1
     ):
-        # # help
-        # if startCheckQuery(message, StartQuery='help_'):
-        #     await redirectHelp(message)
+        # help
+        if startCheckQuery(message, StartQuery='help_'):
+            await redirectHelp(message)
             
         # Captcha Redirect Implementation 
-        if startCheckQuery(message, StartQuery='captcha'):
+        elif startCheckQuery(message, StartQuery='captcha'):
             await buttonCaptchaRedirect(message)
             await textCaptchaRedirect(message)
 
