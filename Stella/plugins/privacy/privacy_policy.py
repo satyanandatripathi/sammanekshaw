@@ -204,42 +204,35 @@ async def ud_callback(client: StellaCli, query: CallbackQuery):
     if data == "privacy#policy":
         await query.message.edit_text(
             text = main_text
-            disable_web_page_preview = True,
             reply_markup = main_button
         )
     elif data == "collecttext_privacy":
         await query.message.edit_text(
-            text = collect_text,
-            disable_web_page_preview = True,
+            text = collect_text
             reply_markup = collect_button,
         )
     elif data == "whytext_privacy":
         await query.message.edit_text(
-            text = why_text,
-            disable_web_page_preview = True,
-            reply_markup = why_button,
+            text = why_text
+            reply_markup = why_button
         )
     elif data == "wedotext_privacy":
         await query.message.edit_text(
-            text = wedo_text,
-            disable_web_page_preview = True,
-            reply_markup = wedo_button,
+            text = wedo_text
+            reply_markup = wedo_button
         )
     elif data == "wedonottext_privacy":
         await query.message.edit_text(
-            text = wedonot_text,
-            disable_web_page_preview = True,
-            reply_markup = wedonot_button,
+            text = wedonot_text
+            reply_markup = wedonot_button
         )
     elif data == "righttext_privacy":
         await query.message.edit_text(
-            text = right_text,
-            disable_web_page_preview = True,
-            reply_markup = right_button,
+            text = right_text
+            reply_markup = right_button
         )
     elif data == "back_privacy":
         await query.message.edit_text(
-            text = main_text,
-            disable_web_page_preview = True,
-            reply_markup = main_button,
+            text = main_text
+            reply_markup = main_button
         )
