@@ -1,4 +1,4 @@
-"""from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from Stella import StellaCli
 from Stella.helper import custom_filter
 
@@ -15,10 +15,6 @@ async def urbanDictionary(client, message):
                 InlineKeyboardButton("Privacy Policy", callback_data = "privacy#policy")
             ],
             [
-                InlineKeyboardButton("Retrieve data", callback_data = "privacy#retrieve"),
-                InlineKeyboardButton("Delete data", callback_data = "privacy#delete")
-            ],
-            [
                 InlineKeyboardButton("Cancel", callback_data = "privacy#cancel")
             ]
         ]
@@ -26,9 +22,7 @@ async def urbanDictionary(client, message):
     reply_text = "Select one of the below options for more information about how the bot handles your privacy."
     await message.reply_text(
         text = reply_text,
-        reply_markup = reply_markup,
-        disable_web_page_preview = True,
-        quote = True
+        reply_markup = reply_markup
     )
     return
 
@@ -44,4 +38,3 @@ async def ud_callback(client: StellaCli, callback_query: CallbackQuery):
             message_id=message_id,
             text=text_r
         )
-"""
