@@ -57,11 +57,11 @@ async def start(client, message):
         len(message.command) > 1
     ):
         # # help
-        # if startCheckQuery(message, StartQuery='help_'):
-        #     await redirectHelp(message)
+        if startCheckQuery(message, StartQuery='help_'):
+            await redirectHelp(message)
             
         # Captcha Redirect Implementation 
-        if startCheckQuery(message, StartQuery='captcha'):
+        elif startCheckQuery(message, StartQuery='captcha'):
             await buttonCaptchaRedirect(message)
             await textCaptchaRedirect(message)
 
