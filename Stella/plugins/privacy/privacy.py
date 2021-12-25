@@ -1,4 +1,4 @@
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+"""from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from Stella import StellaCli
 from Stella.helper import custom_filter
 
@@ -44,3 +44,4 @@ async def ud_callback(client: StellaCli, callback_query: CallbackQuery):
             message_id=message_id,
             text=text_r
         )
+"""
