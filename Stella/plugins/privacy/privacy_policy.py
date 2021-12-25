@@ -6,8 +6,8 @@ from pyrogram import filters
 
 main_text = """
 **Our contact details**
-**Name:** MissRose bot
-**Telegram:** https://t.me/dotenv
+**Name:** Sam Manekshaw
+**Telegram:** https://t.me/menotdeveloper
 
 The bot has been made to **protect** and **preserve** privacy as best as possible.
 The proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
@@ -204,6 +204,7 @@ async def ud_callback(client: StellaCli, query: CallbackQuery):
     if data == "privacy#policy":
         await query.message.edit_text(
             text = main_text,
+            disable_web_page_preview = True
             reply_markup = main_button
         )
     elif data == "collecttext_privacy":
