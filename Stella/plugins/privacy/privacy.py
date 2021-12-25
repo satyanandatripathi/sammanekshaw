@@ -26,7 +26,7 @@ async def urbanDictionary(client, message):
     )
     return
 
-@StellaCli.on_callback_query(custom_filter.create(lambda _, __, query: 'privacy#' in query.data))
+@StellaCli.on_callback_query(filters.create(lambda _, __, query: 'privacy#' in query.data))
 async def ud_callback(client: StellaCli, callback_query: CallbackQuery):
     message_id = callback_query.message.message_id
     chat_id = callback_query.message.chat.id 
