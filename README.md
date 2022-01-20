@@ -17,7 +17,7 @@
 <p>Stella is Easy to use, Elegant and Fast, with lots of plugins.</p>
 
 ### Installation
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/satyanandatripathi/sammanekshaw)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/satyanandatripathi/sammanekshaw#sed)
 
 ```
 $ git clone https://github.com/SpookyGang/Stella.git
