@@ -8,8 +8,8 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "hello"
-          replace: "world"
+          find: "Sam Manekshaw"
+          replace: "Emcee"
           regex: false
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
