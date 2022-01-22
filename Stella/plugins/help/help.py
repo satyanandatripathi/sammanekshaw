@@ -27,7 +27,7 @@ from Stella.helper.pagination_buttons import paginate_modules
 
 HELP_TEXT = (
     "Here you can find information regarding how to use me. I'll guide you through all the modules I have to offer.\n\n"
-    "» If you encounter any bugs, please feel free to report them in my support chat - @menotdeveloper ^^"
+    "» If you encounter any bugs, please feel free to report them in my support chat - @Emcee_support ^^"
 )
 
 async def help_parser(client, chat_id, text, keyboard=None):
