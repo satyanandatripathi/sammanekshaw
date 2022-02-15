@@ -95,7 +95,7 @@ async def isUserAdmin(message: Message, pm_mode: bool = False, user_id: int = No
     """
 
     if user_id is None:
-        user_id = message.from_user
+        user_id = message.from_user.user.id
 
     if chat_id is None:
         chat_id = message.chat.id 
