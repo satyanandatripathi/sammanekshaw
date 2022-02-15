@@ -71,7 +71,7 @@ def add_user(user_id, username=None, chat_id=None, chat_title=None, Forwared=Fal
 
         ChatsIDs = len(GetUserChatList) + 1
         if not chat_id in GetUserChatList:
-            users.update(
+            users.update_one(
                 {
                     'user_id': user_id
                 },
